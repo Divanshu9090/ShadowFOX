@@ -10,12 +10,12 @@
     <header class="header">
         <a href="#" class="logo">Divanshu</a>
         <img src="./assets/bars-solid.svg" alt="bar" id="bar">
-        <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Skills</a>
-            <a href="#">Project</a>
-            <a href="#">Contact</a>
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="navbar-scrolled">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
     
@@ -28,13 +28,13 @@
             Illo iste laudantium sunt vero, possimus reprehenderit ducimus optio autem sit nobis esse enim vitae cum! Repellat eum fugit reiciendis eveniet nesciunt, cumque maiores laboriosam sequi ipsa impedit quo consequuntur.</p>
 
             <div class="social-icon">
-                <a href="#"><img src="./assets/icons8-linkedin.svg" alt="Linkedin-link"></a>
-                <a href="#"><img src="./assets/icons8-github-60.svg" alt="Github-link"></a>
-                <a href="#"><img src="./assets/icons8-leetcode.svg" alt="Leetcode-link"></a>
+                <a href="https://www.linkedin.com/in/divanshu-agrawal-930406253"><img src="./assets/icons8-linkedin.svg" alt="Linkedin-link"></a>
+                <a href="https://github.com/Divanshu9090"><img src="./assets/icons8-github-60.svg" alt="Github-link"></a>
+                <a href="https://leetcode.com/u/Divanshu_Agrawal_12/"><img src="./assets/icons8-leetcode.svg" alt="Leetcode-link"></a>
             </div>
 
-            <a href="#" class="btn">Hire Me</a>
-            <a href="#" class="btn">Resume <img src="./assets/icons8-download-50.png" alt="download-link"></a>
+            <a href="#contact" class="btn">Work with Me</a>
+            <a href="./assets/Resume.pdf" class="btn" download="Divanshu_resume.pdf">Resume <img src="./assets/icons8-download-50.png" alt="download-link"></a>
         </div>
         <div class="home-img">
             <img src="./assets/div.jpg" alt="Self-Image">
@@ -55,13 +55,13 @@
                 <button class="link">Experience</button>
                 <button class="link">Education</button>
             </div>
-            <div class="about-box services data">
+            <div class="about-box data" id="services">
                 <div class="about-info">
                     <h3>Web Development</h3>
                     <p>Lorem ipsum dolor sit amet.</p>
                 </div>
             </div>
-            <div class="about-box experience">
+            <div class="about-box" id="experience">
                 <div class="about-info">
                     <h3>Shadfox Intern</h3>
                     <p>Lorem ipsum dolor sit amet.</p>
@@ -69,7 +69,7 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
-            <div class="about-box education">
+            <div class="about-box" id="education">
                 <div class="about-info">
                     <h3>Bachelor of Technology in Computer Science, GLA University, Mathura</h3>
                     <p>CPI:-  8.46</p>
@@ -146,35 +146,35 @@
                     <h4>Recipe Sharing Platform</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos delectus perspiciatis, laudantium eaque esse consequuntur tempore, illo quaerat quisquam sequi voluptatum dolores a! Iusto quos provident ipsum deleniti laborum nostrum?</p>
                 </div>
-                <a href="#" class="project-btn"><p>Source Code</p></a>
+                <a href="https://github.com/Divanshu9090/Recipe_Sharing_Platform.git" class="project-btn"><p>Source Code</p></a>
             </div>
             <div class="project-box">
                 <div class="project-info">
                     <h4>Alzheimer Dis. Detector</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos delectus perspiciatis, laudantium eaque esse consequuntur tempore, illo quaerat quisquam sequi voluptatum dolores a! Iusto quos provident ipsum deleniti laborum nostrum?</p>
                 </div>
-                <a href="#" class="project-btn"><p>Source Code</p></a>
+                <a href="https://github.com/Divanshu9090/Alzheimer_Disease_Detector.git" class="project-btn"><p>Source Code</p></a>
             </div>
             <div class="project-box">
                 <div class="project-info">
                     <h4>BharatFreeLance Hub</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos delectus perspiciatis, laudantium eaque esse consequuntur tempore, illo quaerat quisquam sequi voluptatum dolores a! Iusto quos provident ipsum deleniti laborum nostrum?</p>
                 </div>
-                <a href="#" class="project-btn"><p>Source Code</p></a>
+                <a href="https://github.com/Divanshu9090/BharatFreeLance_Hub.git" class="project-btn"><p>Source Code</p></a>
             </div>
             <div class="project-box">
                 <div class="project-info">
                     <h4>Emotion Recognition</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos delectus perspiciatis, laudantium eaque esse consequuntur tempore, illo quaerat quisquam sequi voluptatum dolores a! Iusto quos provident ipsum deleniti laborum nostrum?</p>
                 </div>
-                <a href="#" class="project-btn"><p>Source Code</p></a>
+                <a href="https://github.com/Divanshu9090/Emotion-Recognition.git" class="project-btn"><p>Source Code</p></a>
             </div>
             <div class="project-box">
                 <div class="project-info">
                     <h4>Voice GPT</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos delectus perspiciatis, laudantium eaque esse consequuntur tempore, illo quaerat quisquam sequi voluptatum dolores a! Iusto quos provident ipsum deleniti laborum nostrum?</p>
                 </div>
-                <a href="#" class="project-btn"><p>Source Code</p></a>
+                <a href="https://github.com/Divanshu9090/Voice_GPT.git" class="project-btn"><p>Source Code</p></a>
             </div>
         </div>
     </section>
@@ -182,15 +182,32 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact Me</h2>
         <h3 class="heading sec">Let's work Together</h3>
-        <form action="">
+        <form method="POST" id="contactForm">
             <div class="input-box">
-                <input type="text" name="name" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="Number" placeholder="Phone Number" minlength="10" maxlength="10" required>
-                <input type="text" placeholder="Subject">
+                <input type="hidden" id="access_key" name="access_key" value="6d7dd0b6-682e-470d-b8e0-53056f531da3">
+                <div class="input-field field">
+                    <input name="name" type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                    <div class="error-txt">Full Name can't be blank</div>
+                </div>
+                <div class="input-field field">
+                    <input name="email" type="text" placeholder="Email Address" id="email" class="item" autocomplete="off">
+                    <div class="error-txt">Email Address can't be blank</div>
+                </div>
+                <div class="input-field field">
+                    <input name="phone" type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
+                    <div class="error-txt">Phone Number can't be blank</div>
+                </div>
+                <div class="input-field field">
+                    <input name="subject" type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                    <div class="error-txt">Subject can't be blank</div>
+                </div>
             </div>
-            <textarea name="" id="" cols="30" rows="8" placeholder="Your Message"></textarea>
+            <div class="textarea-field field">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
+                <div class="error-txt">Message can't be blank</div>
+            </div>
             <input type="submit" value="Send Message" class="btn">
+            <div id="result"></div>
         </form>
     </section>
     <footer class="footer">
@@ -198,6 +215,7 @@
             © Divanshu Agrawal | All Right Reserved
         </p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./script.js"></script>
 </body>
 </html>

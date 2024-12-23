@@ -37,7 +37,7 @@ html::-webkit-scrollbar-thumb{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 3rem 9%;
+    padding: 0.9rem 9%;
     background-color: var(--bg-color);
     border-bottom: 2px solid var(--link-color);
     display: flex;
@@ -82,6 +82,11 @@ img{
     border-bottom: 3px solid var(--link-color);
 }
 
+.navbar .navbar-scrolled {
+    color: var(--link-color);
+    font-weight: 550;
+}
+
 @media(max-width: 995px){
     #bar{
         display: block;
@@ -90,7 +95,7 @@ img{
         position: absolute;
         top: 100%;
         right: 0;
-        width: 40%;
+        width: 25%;
         border-left: 3px solid var(--link-color);
         border-bottom-left-radius: 2rem;
         padding:  1rem 3%;
@@ -111,6 +116,11 @@ img{
         padding: 1rem;
         border-radius: 0.5rem;
         border-bottom: 0.5rem solid var(--link-color);
+    }
+}
+@media(max-width: 650px){
+    .navbar{
+        width: 35%;
     }
 }
 /* Home section*/
@@ -235,10 +245,10 @@ span{
     content: '';
     background: var(--bg-color);
     position: absolute;
-    width: calc(100% + 8px);
+    width: calc(100% + 0.8rem);
     height: 100%;
     border-left: 3px solid var(--link-color);
-    right: -8px;
+    right: -0.8rem;
     animation: cursor 0.3s infinite,
             typing 20s steps(14) infinite;
 }
@@ -264,7 +274,7 @@ span{
     }
     5%, 50%,
     55%{
-        width: calc(100% + 8px);
+        width: calc(100% + 0.8rem);
     }
 }
 
@@ -279,11 +289,11 @@ span{
         flex-direction: column;
         margin: 5rem 4rem;
     }
-    .home-content h3{
-        font-size: 2.5rem;
-    }
     .home-content h1{
         font-size: 5rem;
+    }
+    .home-content h3{
+        font-size: 2.5rem;
     }
     .home-img img{
         margin-top: 4rem;
@@ -294,12 +304,22 @@ span{
     .home-content .btn{
         margin: 0;
     }
+    .home-content h1{
+        font-size: 3rem;
+    }
+    .home-content h3{
+        font-size: 1.8rem;
+    }
+    .home-content p{
+        font-size: 1.5rem;
+    }
 }
 
 /* About Section*/
 .heading{
     font-size: 3.3rem;
     margin: 1rem;
+    margin-top: 2rem;
     font-weight: 700;
     background: -webkit-linear-gradient(var(--link-color),var(--text-color));
     -webkit-background-clip: text;
@@ -389,6 +409,7 @@ span{
 }
 .data{
     display: block;
+    margin-top: 2rem;
 }
 .about-content .about-btn .select{
     background: linear-gradient(var(--link-color),var(--second-link-color));
@@ -595,9 +616,10 @@ span{
     text-align: center;
 }
 .contact form .input-box{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     justify-content: center;
-    flex-wrap: wrap;
+    gap:2rem;
 }
 .contact form .input-box input,
 .contact form textarea{
@@ -613,6 +635,35 @@ span{
 }
 .contact form btn{
     margin-top: 2rem;
+}
+
+.field .error-txt{
+    font-size: 1.45rem;
+    color: #d93025;
+    text-align: left;
+    margin-left: 0.5rem;
+    display: none;
+}
+
+.field .error{
+    display: block;
+}
+
+.contact form .input-box .border-red,
+.field .border-red{
+    border-color: #d93025;
+}
+
+#result{
+    margin-top: 2rem;
+    font-size: 1.45rem;
+    color: var(--text-color);
+}
+
+@media(max-width: 660px){
+    .contact form .input-box{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
 /* Footer */
