@@ -226,6 +226,12 @@ span{
     box-shadow:  0 0 15px var(--link-color);
 }
 
+@media(max-width: 436px){
+    #home .home-content .btn{
+        margin: 0.2rem 0;
+    }
+}
+
 .typing-text{
     font-size: 34px;
     font-weight: 600;
