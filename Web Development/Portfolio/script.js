@@ -7,7 +7,6 @@ const aboutLinks = document.querySelectorAll('.link');
 const emailInput = document.getElementById('email');
 const result = document.getElementById('result');
 
-
 toggleButton.addEventListener('click', () => navbar.classList.toggle('active'));
 
 anchors.forEach(anchor => {
