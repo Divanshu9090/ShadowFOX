@@ -226,12 +226,6 @@ span{
     box-shadow:  -3px 3px 5px var(--second-link-color);
 }
 
-@media(max-width: 436px){
-    #home .home-content .btn{
-        margin: 0.2rem 0;
-    }
-}
-
 .typing-text{
     font-size: 34px;
     font-weight: 600;
@@ -292,7 +286,7 @@ span{
 
 @media(max-width: 995px){
     #home{
-        flex-direction: column;
+        flex-direction: column-reverse;
         margin: 5rem 4rem;
     }
     .home-content h1{
@@ -318,6 +312,14 @@ span{
     }
     .home-content p{
         font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 436px){
+    #home .home-content .btn{
+        margin: 0.15rem 0;
+        width: 100%;
+        text-align: center;
     }
 }
 
