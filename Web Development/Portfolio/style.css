@@ -9,7 +9,7 @@
 }
 
 :root{
-    --bg-color: #f4f4f4;
+    --bg-color: rgb(240 240 240);
     --second-bg-color: rgba(255, 255, 255, 0.9);
     --link-color: #0056b3;
     --second-link-color: #08C2FF;
@@ -367,6 +367,7 @@ span{
 .about-content p{
     margin: 1.5rem 0;
     font-size: 1.5rem;
+    line-height: 1.2;
     font-weight: 500;
     color: var(--text-color);
 }
@@ -392,18 +393,6 @@ span{
     transform: scale(1.03);
     box-shadow: 0 4px 10px var(--second-link-color);
 }
-.about-box{
-    background-color: var(--second-bg-color);
-    border-radius: 3rem;
-    cursor: pointer;
-    transition: 0.3s ease;
-    display: none;
-}
-.about-box:hover{
-    transform: scale(1.03);
-    border: 1px solid var(--text-color);
-    box-shadow: 0 4px 10px var(--second-link-color);
-}
 .about-box .about-info{
     display: flex;
     flex-direction: column;
@@ -412,13 +401,40 @@ span{
     align-items: baseline;
     padding: 2em;
 }
+.about-box{
+    display: none;
+}
+.about-info{
+    margin: 1rem 0;
+    background-color: var(--second-bg-color);
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: none;
+}
+.about-info:hover{
+    transform: scale(1.03);
+    border: 1px solid var(--text-color);
+    box-shadow: 0 4px 10px var(--second-link-color);
+}
+.about-info .head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 .about-info h3{
+    display: inline-block;
     font-size: 2rem;
     font-weight: 500;
+}
+.about-info .head p{
+    display: inline-block;
+    margin: 0;
 }
 .about-info p{
     font-size: 1.5rem;
     font-weight: 400;
+    line-height: 1.2;
 }
 .data{
     display: block;
