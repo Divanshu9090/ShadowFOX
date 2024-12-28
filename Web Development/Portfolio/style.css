@@ -371,6 +371,11 @@ span{
     font-weight: 500;
     color: var(--text-color);
 }
+
+.about-content .about-box .about-info .Company-name{
+    margin: 1.5rem 0 0 0;
+}
+
 .about-content .about-btn{
     margin: 1rem 0;
     width: 100%;
